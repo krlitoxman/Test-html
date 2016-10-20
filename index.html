@@ -1,126 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<title>CV - lili</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<title>Lili's Profile</title>
+	<link rel="shortcut icon" href="img/lili-icon.ico">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-
+<body>
 	<header class="main">
 		<h1>lilainnys</h1>
-
-		<!--NAV - TITULO DE LA SECCION PRINCIPAL-->
+		<!--NAV-TITULO PRINCIPAL-->
 		<section class="mainContainer">
 			<nav>
 				<ul>
-					<!--ABOUT-->
 					<li>
-						<a href="#!">about</a>
+						<a href="#!" class="">about</a>
 					</li>
-					<!--CREATION-->
 					<li>
-						<a href="#!">Creation</a>
+						<a href="#!">creation</a>
 					</li>
-					<!--PORTFOLIO-->
 					<li>
-						<a href="#!">Portfolio</a>
+						<a href="#!">portfolio</a>
 					</li>
-					<!--CONTACT-->
 					<li>
-						<a href="#!">Contact</a>
+						<a href="#!">contact</a>
 					</li>
 				</ul>
 			</nav>
-
 			<div class="mainContainer-item">
 				<h2>portfolio</h2>
 			</div>
 		</section>
 	</header>
-
-	<!-- PORTFOLIO-->
-	<article class="m-general main about">
-		<!--AVATAR-->
-		<section class="item">
+	<!--ABOUT SECTION-->
+	<article class="content main about">
+		<!--ABOUT IMAGE-->
+		<section class="item order-2">
 			<figure>
 				<img src="img/lili-avatar.jpg" alt="">
 			</figure>
 		</section>
-
-		<!--BIO-->
-		<section class="item">
-			<h3>About me</h3>
-			<p>My name is Lilainnys and I am a software developer and lover of all things tech! I’m writing this blog in the hope to provide some insight into the world of an ever learning and evolving developer.</p>
+		<!--ABOUT DESCRIPTION-->
+		<section class="item order-3">
+			<h3>1. About me</h3>
+			<p>
+				My name is Lilainnys and I am a software developer and lover of all things tech! I’m writing this blog in the hope to provide some insight into the world of an ever learning and evolving developer.
+			</p>		
 		</section>
-
-		<!--RELLENO-->
-		<section class="item">
-			<span>About</span>
+		<!--ABOUT TITLE-->
+		<section class="item order-1">
+			<span class="title">about</span>
 		</section>
 	</article>
-	
-	<!--CREATION-->
-	<article class="m-general main create">
-		<!--AVATAR-->
-		<section class="item">
-			<span>creation</span>
-		</section>		
-
-		<!--RELLENO-->
-		<section class="item">
+	<!--CREATION SECTION-->
+	<article class="content main creation">
+		<!--CREATION TITLE-->
+		<section class="item order-1">
+			<span class="title">creation</span>
+		</section>
+		<!--CREATION IMAGE-->
+		<section class="item order-2">
 			<figure>
-				<img src="img/bombillo.png" alt="">
+				<img src="img/bulb.png" alt="">
 			</figure>
 		</section>
-
-		<!--BIO-->
-		<section class="item">
-			<h3>Creation</h3>
+		<!--CREATION DESCRIPTION-->
+		<section class="item order-3">
+			<h3>2. Creation</h3>
 			<p>
-				I have been successful as a freelancer, not just because of my web programming skills, but because I am a skilled and dependable web programmer that can be trusted to follow through with my work.</p>
+				I have been successful as a freelancer, not just because of my web programming skills, but because I am a skilled and dependable web programmer that can be trusted to follow through with my work.
+			</p>	
 		</section>
 	</article>
-		
-	<!--PORTFOLIO-->
-	<article class="m-general main portfolio">
-		<!--DESCRIPCIONES-->
-		<section class="item">
-			<div class="item-description">
-				<h3>Portfolio</h3>
+	<!--PORTFOLIO SECTION-->
+	<article class="content main portfolio">
+		<!--PORTFOLIO DESCRIPTION-->
+		<section class="item order-2">
+			<div class="background">
+				<h3>3. Portfolio</h3>
+				<span>Here are some links to pages about me:</span>
 				<p><a href="#!">pat@codeofhonor.com</a> — email address</p>
-				<p><a href="#">webcoyote@github</a> — my public projects on GitHub</p>
+				<p><a href="#">webcoyote@github</a> — my projects on GitHub</p>
 				<p><a href="#">Wikipedia profile</a> — for Pete’s sake</p>
 				<p><a href="#">LinkedIn profile</a> — my professional profile</p>
 				<p><a href="#">Moby Games rapsheet</a> — I’ve helped create</p>
-				<p><a href="#">IMDb page</a> — I’m a movie actor too</p>
+				<p><a href="#">IMDb page</a> — I’m a movie actress too</p>
 			</div>
-		
 		</section>
-		<!--RELLENO-->
-		<section class="item">
-			<span>Porftfolio</span>
-		</section>		
+			<!--PORTFOLIO TITLE-->
+		<section class="item order-1">
+			<span class="title">portfolio</span>
+		</section>
 	</article>
-
-	<!-- CONTACT-->
-	<article class="m-general main contact">
-		
-		<!--RELLENO-->
-		<section class="item">
-			<h3>Contact</h3>
-			<p>I live in Bellevue, Washington, just across the lake from Seattle.</p>
+	<!--CONTACT SECTION-->
+	<article class="content main contact">
+		<!--CONTACT DESCRIPTION-->
+		<section class="item order-2">
+			<h3>4. Contact</h3>
+			<p>
+				I live in Bellevue, Washington, just across the lake from Seattle.
+			</p>	
 		</section>
-			<!--RELLENO-->
-		<section class="item">
-			<span>About</span>
+		<!--CONTACT TITLE-->
+		<section class="item order-1">
+			<span class="title">contact</span>
 		</section>
-
-		<section class="item">
+		<!--CONTACT FORM-->
+		<section class="item order-3">
 			<form action="">
 				<figure>
 					<img src="img/send.png" alt="">
@@ -130,7 +118,10 @@
 			</form>
 		</section>
 	</article>
-<body>
-	
+	<footer>
+		<h3>
+			<strong>Powered by Krlitox for the love of my life</strong>
+		</h3>
+	</footer>	
 </body>
 </html>

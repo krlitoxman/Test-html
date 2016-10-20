@@ -11,20 +11,11 @@
 	/**********************
 		INDEX
     **********************/
-
-    		
+ 		
 @media (max-width: 1297px)
 	/**********************
 		INDEX
     **********************/
-
-		
-
-	
-	/**********************
-        MODALES
-    **********************/	
-				
 
 // Large devices (desktops, 62em and up)
 @media (max-width: 991px)
@@ -37,7 +28,7 @@
 	/**********************
        INDEX
     **********************/
-	.m-general
+	.content
 		.item
 			width 50%
 			height 20em
@@ -46,12 +37,10 @@
 				height 15em
 		&.portfolio
 			.item
-				&:nth-child(3)
-					span
-						margin-top 2.5em
+				&:nth-child(1)
+				&:nth-child(2)
+					width 100%
 
-
-	
 	/**********************
         ERROR 404
     **********************/
@@ -74,32 +63,50 @@
         INDEX
     **********************/
 
-
 @media (max-width: 630px)
 	/**********************
     	INDEX
     **********************/			
 	body
-		font-size 14px
+		//font-size 14px
 		
-	.m-general
+	.content
 		.item
+			&.order-1 
+				order 1
+				margin top -1em
+				padding 2.5em
+				
+			&.order-2 
+				order 2
+			&.order-3
+				order 3
 			width 100%
-			figure
-				width 15em
+	/*	&.about
+			.item
+				&:nth-child(1)
+					background none
+					position absolute
+					figure
+						height 100%
+						width 100%
+						img
+							height 150px
+							width 150px */
+
 		
 	/**********************
        HEADER
     **********************/
 	.main
-		width 90%
+		width 95%
 		
 	header
 		h1
 			text-align center
 			
 		.mainContainer
-			margin-bottom 0.5em
+			//margin-bottom 0.5em
 			nav
 				width 100%
 				flex-center()
@@ -108,13 +115,10 @@
 						font-size 1.3em
 			&-item
 				display none
-	
-
-							
+								
 	/**********************
         FOOTER
     **********************/											   	
-
 
 // Small devices (landscape phones, 415px and up)
 @media (max-width: 415px)
@@ -124,4 +128,3 @@
 	/**********************
         INDEX
     **********************/
-

@@ -1,37 +1,24 @@
 /*
-	Proyecto: Test de Curriculum para Lili (Version 2016)
+	Proyecto: Lili's Profile (Version 2016)
 	Maquetado por: @Krlitoxman
-	Fecha: 15/10/2016;
+	Fecha: 18/10/2016;
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
-
-/*
-	IMPORTACIONES
--------------------------------------------------------------------------
--------------------------------------------------------------------------*/
-@import 'nib'
-
-
 /*
 	VARIABLES
+-------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
-beige = #f8fad1
-fucsia = #c60073
-
 azul = #2389cb
-azul-celeste = #0cd2d4
-
+beige = #f9f5dc
+fucsia = #c60073
+gris = #e7e7e4
 naranja = #c74b0d
 rojo = #c0290c
+verde = #367201
 vinotinto = #87004d
 
-verde = #367201
-verde-fluorescente = #52d43e
-
-gris-claro = #e7e7e4
-
 /*
-	MIXINS
+	FUNCIONES
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
 flex-center()
@@ -54,7 +41,6 @@ flex-flexStart()
 	flex-wrap wrap
 	justify-content flex-start
 	
-
 /*
 	CLASES GENERALES
 -------------------------------------------------------------------------
@@ -62,72 +48,58 @@ flex-flexStart()
 body
 	background beige
 	font-size 16px
-	margin 0 0 3em 0
-	
 ul
 	margin 0
-	padding 0
-	li
-		list-style none
-		
+	padding 0	
+li
+	list-style none
+
 h1
-	font-size 2.5em
-	text-transform uppercase
 	color fucsia
-	
-h3
-	font-size 1.7em
-	
-h1
-h2
-h3
-p
+	font-size 2.5em
 	margin 0
-	
+	text-transform uppercase
+h2
+	margin 0
 p
-	font-size 1em
 	color rgba(black .7)
 	font-family 'helvetica'
-	
+	font-size 1em
+	margin 0
+span
+	margin 0
+		
 figure
 	margin 0
 
-input
-	border 0
-	height 2.7em
-	width 100%
-	text-indent 1em
 
 /*
 	HEADER
 -------------------------------------------------------------------------
--------------------------------------------------------------------------*/	
-.main
-	width 60em
-	margin 0 auto
-	
-header
-	padding-top 1.5em
+-------------------------------------------------------------------------*/
+.main 
+		padding-top 1.5em
+		width 60em
+		margin 0 auto
 	h1
+		font-family Gabriola
 		text-align right
-		
 	.mainContainer
-		background gris-claro
+		background gris
 		padding 0.4em 0.5em 0 0.5em
 		flex-between()
 		nav
 			ul
 				flex-flexStart()
-				li
+				li 
 					margin-right 0.4em
 					a
-						display inline-block
 						color black
-						font-family 'Arial'
+						font-family arial
+						font-size 1em 
 						font-weight bold
-						text-transform uppercase
 						text-decoration none
-						font-size 1em
+						text-transform uppercase
 					&:nth-child(1)
 						border-bottom 6px solid vinotinto
 					&:nth-child(2)
@@ -135,36 +107,28 @@ header
 					&:nth-child(3)
 						border-bottom 6px solid azul
 					&:nth-child(4)
-						border-bottom 6px solid naranja
-						
+						border-bottom 6px solid naranja						
 		&-item
 			h2
-				font-size 1.8em
-				color azul-celeste
+				color azul
 				font-family 'Arial'
+				font-size 1.8em
 				font-weight bold
+				margin-top -0.2em	
 				text-transform uppercase
-				margin-top -0.2em
-
-
-/*
-	INDEX
--------------------------------------------------------------------------
--------------------------------------------------------------------------*/
-.m-general
+.content
 	flex-between()
 	.item
-		width 33.3%
 		height 18em
+		margin-top -1.5em
 		text-align center
+		width 33.3%
 		figure
-			width 81%
 			margin 1em auto 0 auto
+			width 81%
 			img
-				width 100%
 				border-radius 50%
-				
-				
+				width 100%
 	&.about
 		.item
 			&:nth-child(1)
@@ -179,58 +143,61 @@ header
 					color white
 					padding 1em
 				
-				
 			&:nth-child(3)
 				background fucsia
 				span
 					color rgba(white .7)
-					text-transform uppercase
+					display block
+					font-family 'Arial'
 					font-size 2.5em
 					font-weight bold
-					font-family 'Arial'
 					margin-top 2.7em
-					display block
-	&.create
+					text-transform uppercase
+	&.creation
 		.item
 			&:nth-child(1)
 				background verde
 				span
 					color rgba(white .7)
-					text-transform uppercase
+					display block
+					font-family 'Arial'
 					font-size 2.5em
 					font-weight bold
-					font-family 'Arial'
 					margin-top 2.7em
-					display block
+					text-transform uppercase
 			
 			&:nth-child(2)
 				background white
 				figure
-					width 54%
 					margin 1em auto 0 auto
+					width 54%
 					img
 						width 100%
 						
 
 			&:nth-child(3)
-				background gris-claro
+				background gris
 				h3
 					color black
 					padding-top 1.4em
 				p
 					padding 1em
-
 	&.portfolio
 		.item
-			&-description
-				background gris-claro
+			.background
+				background gris
 				margin 0.5em
-				padding 2em
+				padding 0.4em
 				p
 					margin-bottom 0.6em
+			
 			&:nth-child(1)
 				width 66.7%
 				background white
+				span
+					color rgba(black .7)
+					display block
+					margin-bottom 1em
 			
 			&:nth-child(2)
 				background azul
@@ -241,8 +208,7 @@ header
 					font-weight bold
 					font-family 'Arial'
 					margin-top 2.7em
-					display block			
-	
+					display block	
 	&.contact
 		.item
 			&:nth-child(1)
@@ -254,7 +220,7 @@ header
 					padding 1em
 					color white
 					font-size 1.2em
-					
+		
 			&:nth-child(2)
 				background rojo
 				span
@@ -272,8 +238,10 @@ header
 					width 70%
 					margin 0 auto
 					figure
-						width 4em
-						padding-top 2em
+						padding 1em
+						img
+							margin 1em auto 0 auto
+							width 40%
 					button
 						background none
 						color white
@@ -287,6 +255,17 @@ header
 						&:hover
 							background white 
 							color naranja
+footer
+	flex-center()
+	color rgba(black,0.5)
+	padding 1em
+	text-align center
+	h3
+		font-weight normal
+		strong
+			&:before
+			&:after
+				content " ♥♥♥ "
+				color red
 
-		
 @import 'media-queries.styl'
