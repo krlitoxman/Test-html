@@ -6,16 +6,21 @@
 	/**********************
 		INDEX
     **********************/
+    
+
     	
 @media (max-width: 1400px)
 	/**********************
 		INDEX
     **********************/
+    	
+
  		
 @media (max-width: 1297px)
 	/**********************
 		INDEX
     **********************/
+    	
 
 // Large devices (desktops, 62em and up)
 @media (max-width: 991px)
@@ -32,14 +37,40 @@
 		.item
 			width 50%
 			height 20em
+			figure
+				width 74%
+				
 			&:nth-child(3)
 				width 100%
 				height 15em
+				
+		&.creation
+			.item
+				&:nth-child(2)
+					figure
+						width 48%
+
 		&.portfolio
 			.item
 				&:nth-child(1)
 				&:nth-child(2)
 					width 100%
+					
+		&.contact
+			.item
+				&:nth-child(3)
+					form
+						figure
+							margin-top 1.3em
+							padding 0
+							width 35%
+						
+						input
+							width 60%
+							
+						button
+							display block
+							margin 0.5em auto 0 auto
 
 	/**********************
         ERROR 404
@@ -72,27 +103,40 @@
 		
 	.content
 		.item
+			width 100%
 			&.order-1 
 				order 1
-				margin top -1em
-				padding 2.5em
+				margin-top -1em
+				padding 2em 0.5em 2.5em 0.5em
+				height auto	
+				.title
+					margin-top 0 !important	
 				
 			&.order-2 
 				order 2
+				figure
+					height 83% !important
+					img
+						width auto !important
+						height 100% !important
 			&.order-3
 				order 3
-			width 100%
-	/*	&.about
+		
+		&.contact
 			.item
-				&:nth-child(1)
-					background none
-					position absolute
-					figure
-						height 100%
-						width 100%
-						img
-							height 150px
-							width 150px */
+				&:nth-child(3)
+					background gris
+					form
+						width 90%
+						input
+							width 80%
+						button
+							border 1px solid azul
+							color azul
+							&:hover
+								background azul
+								color white
+
 
 		
 	/**********************
